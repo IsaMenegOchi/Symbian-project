@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SymbianProject</string>
+    <string name="login">Logar</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="cadastro">Cadastrar</string>
+    <string name="Sobrenome">Sobrenome</string>
+    <string name="celular">Celular</string>
+</resources>

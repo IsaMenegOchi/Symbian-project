@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.CadastroActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/oculos_livro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCadastro_Title"
+        style="@style/titulos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tvCadastro_Nome"
+        style="@style/nomes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCadastro_Title" />
+
+    <EditText
+        android:id="@id/etCadastro_Nome"
+        style="@style/editText"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvCadastro_Nome"
+        app:layout_constraintTop_toBottomOf="@+id/tvCadastro_Nome" />
+
+    <TextView
+        android:id="@+id/tvCadastro_Sobrenome"
+        style="@style/nomes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Sobrenome"
+        app:layout_constraintStart_toStartOf="@+id/tvCadastro_Nome"
+        app:layout_constraintTop_toBottomOf="@+id/etCadastro_Nome" />
+
+    <EditText
+        android:id="@+id/etCadastro_Sobrenome"
+        style="@style/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="@+id/etCadastro_Nome"
+        app:layout_constraintTop_toBottomOf="@+id/tvCadastro_Sobrenome" />
+
+    <TextView
+        android:id="@+id/tvCadastro_Email"
+        style="@style/nomes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="@+id/tvCadastro_Nome"
+        app:layout_constraintTop_toBottomOf="@+id/etCadastro_Sobrenome" />
+
+    <EditText
+        android:id="@+id/etCadastro_Email"
+        style="@style/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/etCadastro_Nome"
+        app:layout_constraintStart_toStartOf="@+id/etCadastro_Nome"
+        app:layout_constraintTop_toBottomOf="@+id/tvCadastro_Email" />
+
+
+    <TextView
+        android:id="@+id/tvCadastro_Celular"
+        style="@style/nomes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celular"
+        app:layout_constraintStart_toStartOf="@+id/tvCadastro_Nome"
+        app:layout_constraintTop_toBottomOf="@+id/etCadastro_Email" />
+
+    <EditText
+        android:id="@+id/etCadastro_Celular"
+        style="@style/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/etCadastro_Nome"
+        app:layout_constraintStart_toStartOf="@+id/etCadastro_Nome"
+        app:layout_constraintTop_toBottomOf="@+id/tvCadastro_Celular" />
+
+    <Button
+        android:id="@+id/btnCadastro_Cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="@string/cadastro"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCadastro_Celular" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="92dp"
+            android:src="@drawable/ic_wave_bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCadastro_Cadastrar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

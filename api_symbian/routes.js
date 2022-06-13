@@ -1,11 +1,10 @@
-
 const {Router} = require('express')
 const routes = new Router()
 
-const UsuarioControler = require('./controllers/UsuarioController')
+const UsuarioController = require('./controllers/UsuarioController')
 
-routes.post('/usuario/cadastrar', UsuarioControler.cadastroUsuario)
-routes.get('/usuario/listar', UsuarioControler.listarUsuario)
+routes.post('/usuario/cadastrar', UsuarioController.cadastro)
+routes.get('/usuario/listar', UsuarioController.listar)
 
 
 module.exports = routes
